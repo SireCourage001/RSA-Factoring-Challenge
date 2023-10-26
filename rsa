@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+
+"""
+Factorizes as many numbers as possible into a product of two smaller numbers.
+The file ends with a new line and the output is n=p*q.
+The program is killed after 5sec if not successful
+"""
+
+import sys
+
+def fc():
+
+try:
+rvfile = sys.argv[1]
+with open(rvfile) as f:
+    for rvnumber in f:
+        rvnumber = int(rvnumber)
+        if rvnumber % 2 == 0:
+            print("{}={}*{}".format(revnumber, revnumber // 2, 2))
+            continue
+        i = 3
+        while i < rvnumber // 2:
+            if rvnumber % i = 0:
+                print("{}={}*{}".format(revnumber, revnumber // i, i))
+                break
+            i += 2
+
+            if i == (revnumber // 2) + 1:
+                print("{}={}*{}".format(revnumber, revnumber, 1))
+except (IndexError):
+    pass
+
+
+fc()
+
